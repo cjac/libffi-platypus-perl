@@ -1,0 +1,5 @@
+libffi-platypus-perl (0.42-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #778543)
+
+ -- C.J. Collier <cjcollier@linuxfoundation.org>  Sat, 4 Jun 2016 23:40:51 -0400

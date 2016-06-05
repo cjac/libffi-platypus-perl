@@ -1,0 +1,33 @@
+Source: libffi-platypus-perl
+Section: perl
+Priority: optional
+Maintainer: C.J. Collier <cjcollier@linuxfoundation.org>
+Build-Depends: debhelper (>= 9.20120312~),
+ libalien-ffi-perl (>= 0.12),
+ libconfig-autoconf-perl (>= 0.309),
+ libconstant-perl (>= 1.32) | perl (>= 5.21.4),
+ libffi-checklib-perl (>= 0.05),
+ libfile-sharedir-perl,
+ perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/FFI-Platypus
+
+Package: libffi-platypus-perl
+Architecture: any
+Depends: ${misc:Depends}, ${perl:Depends}, ${shlibs:Depends},
+ libconstant-perl (>= 1.32) | perl (>= 5.21.4),
+ libffi-checklib-perl,
+ libfile-sharedir-perl,
+ perl (>= 5.13.9)
+Description: Write Perl bindings to non-Perl libraries with FFI. No XS required.
+ Platypus is a library for creating interfaces to machine code libraries
+ written in languages like C, C++|FFI::Platypus::Lang::CPP,
+ Fortran|FFI::Platypus::Lang::Fortran, Rust|FFI::Platypus::Lang::Rust,
+ Pascal|FFI::Platypus::Lang::Pascal. Essentially anything that gets compiled
+ into machine code. This implementation uses libffi to accomplish this task.
+ libffi is battle tested by a number of other scripting and virtual machine
+ languages, such as Python and Ruby to serve a similar role. There are a
+ number of reasons why you might want to write an extension with Platypus
+ instead of XS:
+ .
+ This description was automagically extracted from the module by dh-make-perl.
